@@ -57,4 +57,4 @@ MIT
 
 ## Acknowledgements
 
-Based on [rework-class-prefix](https://github.com/jnv/rework-class-prefix) ([originally(https://github.com/johnotander/rework-class-prefix))
+Based on [rework-class-prefix](https://github.com/jnv/rework-class-prefix) ([originally](https://github.com/johnotander/rework-class-prefix))
