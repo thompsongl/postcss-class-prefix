@@ -6,10 +6,11 @@
     "index.js"
   ],
   "devDependencies": {
+    "mocha": "^2.0.0",
     "postcss": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "license": "MIT",
   "repository": {

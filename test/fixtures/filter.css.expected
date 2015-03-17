@@ -1,0 +1,11 @@
+.prfx-Component {
+  color: green;
+}
+
+.prfx-Component.is-disabled .prfx-Subcomponent.is-done {
+  box-sizing: border-box;
+}
+
+.prfx-Something > .prfx-Nothing {
+  color: white;
+}

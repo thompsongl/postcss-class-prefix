@@ -1,0 +1,11 @@
+.Component {
+  color: green;
+}
+
+.Component.is-disabled .Subcomponent.is-done {
+  box-sizing: border-box;
+}
+
+.Something > .Nothing {
+  color: white;
+}

@@ -2,20 +2,22 @@
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
 
+Avoid collisions with other libraries/stylesheets by prefixing your components with a namespace.
+
 __Example input__
 
 ```css
-.grid { /* ... */ }
-.grid-row { /* ... */ }
-.grid-row-col { /* ... */ }
+.Component { /* ... */ }
+.Component--modifier { /* ... */ }
+.Component-descendent { /* ... */ }
 ```
 
 __Example output__
-`classPrefix('flx-')`
+`classPrefix('pfx-')`
 ```css
-.flx-grid { /* ... */ }
-.flx-grid-row { /* ... */ }
-.flx-grid-row-col { /* ... */ }
+.pfx-Component { /* ... */ }
+.pfx-Component--modifier { /* ... */ }
+.pfx-Component-descendent { /* ... */ }
 ```
 
 
@@ -28,9 +30,9 @@ npm install post-class-prefix
 ## Usage
 
 ```javascript
-var fs        = require('fs'),
-    rework    = require('postcss'),
-    classPrfx = require('postcss-class-prefix');
+var fs        = require('fs');
+var rework    = require('postcss');
+var classPrfx = require('postcss-class-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
 var out = postcss()
@@ -57,4 +59,4 @@ MIT
 
 ## Acknowledgements
 
-Based on [rework-class-prefix](https://github.com/jnv/rework-class-prefix) ([originally](https://github.com/johnotander/rework-class-prefix))
+* Based on [rework-class-prefix](https://github.com/jnv/rework-class-prefix) ([originally](https://github.com/johnotander/rework-class-prefix))

@@ -1,0 +1,7 @@
+.my-class {
+  color: green;
+}
+
+.my-class .with-another-class {
+  box-sizing: border-box;
+}
