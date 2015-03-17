@@ -1,0 +1,23 @@
+{
+  "name": "postcss-class-prefix",
+  "version": "0.0.1",
+  "description": "A class prefixer/namespacer for postcss",
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "postcss": "^4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thompsongl/postcss-class-prefixer.git"
+  },
+  "keywords": [
+    "css",
+    "postcss"
+  ]
+}
