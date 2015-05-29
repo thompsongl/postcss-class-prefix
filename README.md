@@ -31,7 +31,7 @@ npm install post-class-prefix
 
 ```javascript
 var fs        = require('fs');
-var rework    = require('postcss');
+var postcss   = require('postcss');
 var classPrfx = require('postcss-class-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
@@ -43,8 +43,8 @@ var out = postcss()
 ### Using the `ignore` option
 
 ```javascript
-var fs    = require('fs');
-var rework    = require('postcss');
+var fs        = require('fs');
+var postcss   = require('postcss');
 var classPrfx = require('postcss-class-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
