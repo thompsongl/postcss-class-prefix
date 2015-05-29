@@ -6,10 +6,6 @@ module.exports = postcss.plugin('postcss-class-prefix', classPrefix);
 function classPrefix(prefix, options) {
   options = options || {};
 
-  function isIgnoredClass(clss) {
-    return classMatchesTest(clss, options.ignore);
-  }
-
   return function(root) {
 
     root.eachRule(function (rule) {
@@ -25,7 +21,7 @@ function classPrefix(prefix, options) {
         var classes = selector.split('.');
 
         return classes.map(function(clss){
-          if(isIgnoredClass(clss) || clss.trim().length === 0) {
+          if (classMatchesTest(clss, options.ignore) || clss.trim().length === 0) {
             return clss;
           }
           return prefix + clss;
