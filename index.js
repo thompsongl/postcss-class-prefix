@@ -1,15 +1,12 @@
 'use strict';
+var postcss = require('postcss');
 
-module.exports = ClassPrefix;
+module.exports = postcss.plugin('postcss-class-prefix', classPrefix);
 
-function ClassPrefix(prefix, options) {
+function classPrefix(prefix, options) {
   options = options || {};
 
-  function isIgnoredClass(clss) {
-    return classMatchesTest(clss, options.ignore);
-  }
-
-  return function classPrefix(root) {
+  return function(root) {
 
     root.eachRule(function (rule) {
       if (!rule.selectors){
@@ -24,7 +21,7 @@ function ClassPrefix(prefix, options) {
         var classes = selector.split('.');
 
         return classes.map(function(clss){
-          if(isIgnoredClass(clss) || clss.trim().length === 0) {
+          if (classMatchesTest(clss, options.ignore) || clss.trim().length === 0) {
             return clss;
           }
           return prefix + clss;
