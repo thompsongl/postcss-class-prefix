@@ -12,7 +12,7 @@ describe('postcss-class-prefix', function() {
     var output = postcss()
                 .use(classPrfx('prfx-'))
                 .process(fixture('source.css'));
-    var expected = fixture('source.css.expected');
+    var expected = fixture('source.expected.css');
 
     assert.equal(output, expected);
   });
@@ -21,7 +21,7 @@ describe('postcss-class-prefix', function() {
     var out = postcss()
               .use(classPrfx('prfx-', { ignore: /^is-/ }))
               .process(fixture('filter.css'));
-    var expected = fixture('filter.css.expected');
+    var expected = fixture('filter.expected.css');
     assert.equal(out, expected);
   });
 });
