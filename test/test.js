@@ -18,10 +18,11 @@ describe('postcss-class-prefix', function() {
   });
 
   it('ignores a classes given in `ignore`', function() {
-    var out = postcss()
+    var output = postcss()
               .use(classPrfx('prfx-', { ignore: /^is-/ }))
               .process(fixture('filter.css'));
     var expected = fixture('filter.expected.css');
-    assert.equal(out, expected);
+
+    assert.equal(output, expected);
   });
 });
