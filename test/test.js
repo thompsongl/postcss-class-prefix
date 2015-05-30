@@ -33,7 +33,7 @@ describe('postcss-class-prefix', function() {
                   /^s-[a-z-]+/,
                   'no-flexbox',
                   'no-fontface',
-                  /^Box[a-zA-Z]/
+                  /^Box[a-zA-Z]+/
                   ]
                 }))
               .process(fixture('ignore.css')).css;
