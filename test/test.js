@@ -11,7 +11,7 @@ describe('postcss-class-prefix', function() {
   it('prefixes all classes', function() {
     var output = postcss()
                 .use(classPrfx('prfx-'))
-                .process(fixture('source.css'));
+                .process(fixture('source.css')).css;
     var expected = fixture('source.expected.css');
 
     assert.equal(output, expected);
@@ -20,7 +20,7 @@ describe('postcss-class-prefix', function() {
   it('ignores a classes given in `ignore`', function() {
     var output = postcss()
               .use(classPrfx('prfx-', { ignore: /^is-/ }))
-              .process(fixture('filter.css'));
+              .process(fixture('filter.css')).css;
     var expected = fixture('filter.expected.css');
 
     assert.equal(output, expected);
