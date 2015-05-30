@@ -1,0 +1,23 @@
+.prfx-Component .s-ignore {
+  color: red;
+}
+
+.prfx-Component .s-also-ignore {
+  font-size: 16px;
+}
+
+.prfx-Component .prfx-j-do-not-ignore {
+  margin: 0;
+}
+
+.BoxWide, .BoxSmall {
+  margin: 0;
+}
+
+.no-flexbox .prfx-Component {
+  display: block;
+}
+
+.no-fontface .prfx-Component {
+  font-size: 12px;
+}

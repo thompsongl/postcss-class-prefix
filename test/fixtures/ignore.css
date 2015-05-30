@@ -1,0 +1,23 @@
+.Component .s-ignore {
+  color: red;
+}
+
+.Component .s-also-ignore {
+  font-size: 16px;
+}
+
+.Component .j-do-not-ignore {
+  margin: 0;
+}
+
+.BoxWide, .BoxSmall {
+  margin: 0;
+}
+
+.no-flexbox .Component {
+  display: block;
+}
+
+.no-fontface .Component {
+  font-size: 12px;
+}
