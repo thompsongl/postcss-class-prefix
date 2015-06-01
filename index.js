@@ -38,13 +38,30 @@ function classPrefix(prefix, options) {
  * @param {string} test
  */
 function classMatchesTest(clss, test) {
-  if(!test) {
+  if (!test) {
     return false;
   }
 
-  if(test instanceof RegExp) {
+  clss = clss.trim();
+
+  if (test instanceof RegExp) {
     return test.exec(clss);
   }
+
+  if (Array.isArray(test)) {
+    // Reassign arguments
+    var tests = test;
+    test = undefined;
+
+    return tests.some(function(test) {
+      if (test instanceof RegExp) {
+        return test.exec(clss);
+      } else {
+        return clss === test;
+      }
+    });
+  }
+
   return clss === test;
 }
 
