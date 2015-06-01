@@ -1,4 +1,4 @@
-# postcss-class-prefix [![Build Status][ci-img]][ci]
+# postcss-class-prefix [![Build Status](https://secure.travis-ci.org/thompsongl/postcss-class-prefix.png?branch=master)](http://travis-ci.org/thompsongl/postcss-class-prefix)
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
 
