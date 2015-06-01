@@ -1,4 +1,4 @@
-# postcss-class-prefix
+# postcss-class-prefix [![Build Status][ci-img]][ci]
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
 
@@ -21,11 +21,11 @@ __Example output__
 ```
 
 
-<!-- ## Installation
+## Installation
 
 ```
 npm install post-class-prefix
-``` -->
+```
 
 ## Usage
 

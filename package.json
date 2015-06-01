@@ -7,7 +7,7 @@
   ],
   "devDependencies": {
     "mocha": "^2.0.0",
-    "postcss": "^4.0.0"
+    "postcss": "^4.1.0"
   },
   "scripts": {
     "test": "mocha"
@@ -19,6 +19,7 @@
   },
   "keywords": [
     "css",
-    "postcss"
+    "postcss",
+    "postcss-plugin"
   ]
 }
