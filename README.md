@@ -24,7 +24,7 @@ __Example output__
 ## Installation
 
 ```
-npm install post-class-prefix
+npm install postcss-class-prefix
 ```
 
 ## Usage
