@@ -15,7 +15,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/thompsongl/postcss-class-prefixer.git"
+    "url": "git://github.com/thompsongl/postcss-class-prefix.git"
   },
   "keywords": [
     "css",
