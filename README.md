@@ -49,7 +49,7 @@ var classPrfx = require('postcss-class-prefix');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
 var out = postcss()
-          .use(classPrfx('my-prefix-', { ignore: [/\.ng-/, 'some-class-to-ignore']}))
+          .use(classPrfx('my-prefix-', { ignore: [/ng-/, 'some-class-to-ignore']}))
           .process(css);
 ```
 
