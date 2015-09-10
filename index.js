@@ -8,7 +8,7 @@ function classPrefix(prefix, options) {
 
   return function(root) {
 
-    root.eachRule(function (rule) {
+    root.walkRules(function (rule) {
       if (!rule.selectors){
         return rule;
       }
