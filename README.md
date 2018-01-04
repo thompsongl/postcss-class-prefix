@@ -1,4 +1,10 @@
 # postcss-class-prefix [![Build Status](https://secure.travis-ci.org/thompsongl/postcss-class-prefix.png?branch=master)](http://travis-ci.org/thompsongl/postcss-class-prefix)
+___
+
+## ⚠️ Repo no longer actively maintained
+Please look to [postcss-prefixer](https://github.com/marceloucker/postcss-prefixer) or [postcss-slds-prefix](https://github.com/salesforce-ux/postcss-slds-prefix) for similar functionallity in active repos.
+
+___
 
 A [PostCSS](https://github.com/postcss/postcss) plugin to prefix/namespace classes.
 
